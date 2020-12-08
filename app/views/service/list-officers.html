@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+{% block pageTitle %}
+  View bankrupt officer search results
+{% endblock %}
+
+{% block beforeContent %}
+  <ul id="navigation" class="mobile-hidden">
+    <li class="user" id="signed-in-user">user@companieshouse.gov.uk
+    </li>
+    <li>
+      <a href="/account/login" id="user-signout">Sign out</a>
+    </li>
+
+  </ul>
+  <a class="govuk-back-link" href="search">Back to search</a>
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-xl">
+    Search results for "John, Smith"
+  </h1>
+
+  <span id="results-hint" class="govuk-hint">
+    Showing 4 of 4 results
+  </span>
+  <div class="govuk-grid-column-full-width">
+    {{ govukTable({
+
+      firstCellIsHeader: false,
+      class:sortable,
+      head: [
+      {
+      text: "First name"
+      },
+      {
+      text: "Last name"
+      },
+      {
+      text: "Date of birth"
+      },
+      {
+      text: "Postcode"
+      }
+
+      ],
+      rows: [
+  [
+      {
+      html: " <a href='view-officer-details'>John</a>"
+      },
+
+      {
+      text: "Smith"
+      },
+      {
+      text: "26/08/1965"
+      },
+      {
+      text: "LL27 0JP"
+    }
+      ],
+      [
+          {
+          html: " <a href='view-officer-details'>John</a>"
+          },
+
+          {
+          text: "Smith"
+          },
+          {
+          text: "09/08/1974"
+          },
+          {
+          text: "WS1 2NL"
+        }
+          ],  [
+                {
+                html: " <a href='view-officer-details'>John</a>"
+                },
+
+                {
+                text: "Smith"
+                },
+                {
+                text: "12/06/1970"
+                },
+                {
+                text: "NP11 3AQ"
+              }
+                ],
+                [
+                    {
+                    html: " <a href='view-officer-details'>John</a>"
+                    },
+
+                    {
+                    text: "Smith"
+                    },
+                    {
+                    text: "16/09/1985"
+                    },
+                    {
+                    text: "GL56 0UH"
+                  }
+                    ]
+
+      ]
+      }) }}
+
+  </div>
+
+{% endblock %}

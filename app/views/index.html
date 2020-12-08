@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Search for a bankrupt and disqualified officer
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">
+        Search for a bankrupt and disqualified officer (prototype)
+        <span class="govuk-caption-xl">Version 1: December 2020</span>
+
+      </h1>
+      <h2 class="govuk-heading-l">Shortcuts</h2>
+      <h3 class="govuk-heading-m">MVP</h3>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a href="service/mvp/search">Search</a>
+        </li>
+        <li>
+          <a href="service/mvp/search-results">Search results</a>
+        </li>
+        <li>
+          <a href="service/mvp/view-officer-details">View officer details</a>
+        </li>
+      </ul>
+
+      <h3 class="govuk-heading-m">Service improvements</h3>
+      <ul class="govuk-list govuk-list--bullet">
+
+        <li>
+          <a href="service/login">Sign in</a>
+        </li>
+        <li>
+          <a href="service/search">Search</a>
+        </li>
+        <li>
+          <a href="service/search-error">Search error (surname empty)</a>
+        </li>
+        <li>
+          <a href="service/list-officers">Search results</a>
+        </li>
+        <li>
+          <a href="service/view-officer-details">View officer details</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+{% endblock %}
