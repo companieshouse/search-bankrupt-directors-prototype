@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+<!-- Adds a class to increase vertical spacing for pages without a back button -->
+{% set mainClasses = "govuk-main-wrapper--l" %}
+
+{% block pageTitle %}
+  Page not found – Search for a bankrupt and disqualified officer
+{% endblock %}
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Page not found</h1>
+      <p>This link has expired</p>
+      <p>
+        <a href="search">Search again</a>
+      </p>
+    </div>
+  </div>
+
+{% endblock %}
