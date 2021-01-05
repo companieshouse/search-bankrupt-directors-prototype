@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+{% block pageTitle %}
+  Search for a bankrupt and disqualified officer
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">
+    Search for a bankrupt and disqualified officer
+  </h1>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="first-name">
+      First name
+    </label>
+
+    <input class="govuk-input govuk-!-width-one-half" id="first-name" name="first-name" type="text" aria-describedby="first-name-hint">
+  </div>
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="first-name">
+      Last name
+    </label>
+
+    <input class="govuk-input govuk-!-width-one-half" id="first-name" name="first-name" type="text" aria-describedby="first-name-hint">
+  </div>
+
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" role="group" aria-describedby="date-of-birth-hint">
+      <legend class="govuk-fieldset__legend">
+        Date of birth
+      </legend>
+      <div id="date-of-birth-hint" class="govuk-hint">
+        For example, 31 3 1980
+      </div>
+      <div class="govuk-date-input" id="date-of-birth">
+        <div class="govuk-date-input__item">
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-date-input__label" for="birth-day">
+              Day
+            </label>
+            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="birth-day" name="birth-day" type="pe="text"" pattern="[0-9]*" inputmode="numeric"></div>
+        </div>
+        <div class="govuk-date-input__item">
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-date-input__label" for="birth-month">
+              Month
+            </label>
+            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="birth-month" name="birth-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+        </div>
+        <div class="govuk-date-input__item">
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-date-input__label" for="birth-year">
+              Year
+            </label>
+            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="birth-year" name="birth-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="postcode">
+        Postcode
+      </label>
+
+      <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="text" aria-describedby="postcode-hint">
+    </div>
+
+    <a href="list-officers" role="button" draggable="false" class="govuk-button">
+      Search
+    </a>
+  </div>
+</div>
+
+</div>
+{% endblock %}
